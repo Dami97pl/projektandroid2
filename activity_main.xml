@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:text="Losowanie kostek">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="left"
+        android:text="Liczba kostek: ">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextLiczbaKostek"
+        android:hint="Podaj liczbę kostek"
+        android:inputType="number"
+        android:text="5">
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLosuj"
+        android:text="LOSUJ"
+        android:layout_marginTop="16dp">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Wylosowane kostki:">
+    </TextView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridKostki"
+        android:layout_marginTop="10dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:gravity="center"
+        android:useDefaultMargins="true">
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Wyniki: "
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewWyniki"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:text="Wyniki pojawią się tutaj">
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SORTUJ ROSNĄCO"
+        android:id="@+id/buttonRosnaco">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SORTUJ MALEJĄCO"
+        android:id="@+id/buttonMalejaco">
+    </Button>
+
+</LinearLayout>
